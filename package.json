@@ -1,0 +1,75 @@
+{
+  "name": "@comkit/comkit-ui",
+  "description": "comkit-ui基于element二次封装的组件",
+  "version": "0.0.1",
+  "author": "ChenLay",
+  "private": false,
+  "main": "lib/ComkitUI.common.js",
+  "keywords": [
+    "comkit",
+    "comkit-ui",
+    "element-ui",
+    "vue"
+  ],
+  "homepage": "https://github.com/SCLGIS/comkit-ui",
+  "bugs": "https://github.com/SCLGIS/comkit-ui/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SCLGIS/comkit-ui.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name ComkitUI --dest lib ./src/index.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.5",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.1",
+    "@vue/cli-service": "^3.1.1",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "highlight": "^0.2.4",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2",
+    "markdown-it-container": "^2.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "transliteration": "^1.6.6",
+    "vue-cli-plugin-element": "^1.0.0",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
